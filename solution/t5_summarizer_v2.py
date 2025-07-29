@@ -14,8 +14,8 @@ class T5Summarizer:
         
         try:
             # Try FLAN-T5 first (compatible with AutoTokenizer)
-            self.model = AutoModelForSeq2SeqLM.from_pretrained('google/flan-t5-small')
-            self.tokenizer = AutoTokenizer.from_pretrained('google/flan-t5-small')
+            self.model = AutoModelForSeq2SeqLM.from_pretrained('../Google-flan-t5-small')
+            self.tokenizer = AutoTokenizer.from_pretrained('../Google-flan-t5-small')
             print("Using FLAN-T5-small")
         except:
             try:

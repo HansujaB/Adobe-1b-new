@@ -14,7 +14,7 @@ class MiniLMSemanticRanker:
         print("Loading MiniLM-L6-v2 for semantic search...")
         
         # Load MiniLM for embeddings (~80MB)
-        self.embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        self.embedder = SentenceTransformer('../all-MiniLM-L6-v2')
         
         # Load spaCy for keyword extraction (~50MB)
         print("Loading spaCy for keyword extraction...")
